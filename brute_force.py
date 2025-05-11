@@ -44,13 +44,11 @@ def brute_force(parametry):
         slownik[i]=parametry[i]
     kolejnosc=odp(n)
     m=len(kolejnosc)
-    print(kolejnosc) 
     for i in range(m): #zmieniamy tablice z np. [0,1,2] na [(0,1),(2,3),(4,5)]
         for j in range(n+1):
             kolejnosc[i][j]=slownik[kolejnosc[i][j]]
-    print(kolejnosc)
     min=kolejnosc[0]
     for i in range(m):
         if total_dys(kolejnosc[i]) < total_dys(min):
             min=kolejnosc[i]
-    return total_dys(min) #wynik to minimalny dystans
+    return f"Minimalny dystans to: {total_dys(min)}, dla trasy {min}" 
