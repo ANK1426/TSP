@@ -1,7 +1,7 @@
 # PROBLEM KOMIWOJAŻERA (TSP)
 
 Problem komiwojażera polega na znalezieniu najkrótszej drogi przechodzącej przez każdy wierzchołek grafu dokładnie raz i powracając do punktu początkowego.
-Jest on zagadnieniem optymalizacyjnym.
+To zagadnienie optymalizacyjne, którego główną trudnością jest duża liczba danych do analizy.
 Jest to jeden z najważniejszych i najbardziej znanych problemów algorytmicznych.
 
 Ten projekt zawiera:
