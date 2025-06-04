@@ -7,4 +7,5 @@ Ten projekt zawiera:
 
 * Zaprezentowanie algorytmu brute-force zliczającego długość drogi dla każdej permutacji punktów
 * Porównanie z algorytmem najbliższego sąsiada, wybierającego dla punktu początkowego następny punkt ze względu na najmniejszą odległość (chciwy algorytm)
+* Ulepszona wersja algorytmu najbliższego sąsiada
 * Program rysujący wykresy przedstawiające wizualnie problem
