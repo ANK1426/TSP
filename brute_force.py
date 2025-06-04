@@ -38,6 +38,9 @@ def total_dys(lista): #całkowity dystans, czyli suma po parach
     return d
 
 def brute_force(parametry):
+    if len(parametry) < 2:
+    print("Błąd: podano za mało punktów.")
+
     n=len(parametry)
     slownik={}
     for i in range(n): #to słownik postaci {0:(pierwsza para współrzędnych)...}
