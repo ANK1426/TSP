@@ -5,6 +5,16 @@ way=[]
 
 
 def wykonanie(punkty):
+    if not punkty:
+        print("Błąd: lista punktów jest pusta.")
+        return []
+
+    if len(punkty) < 2:
+        print("Błąd: potrzebne są co najmniej dwa punkty.")
+        return []
+
+
+def wykonanie(punkty):
     for i in range(len(punkty)):
         nowe_punkty = punkty[:]  # kopia listy
         nowe_punkty[0], nowe_punkty[i] = nowe_punkty[i], nowe_punkty[0]  # zamień pierwszy z i-tym
