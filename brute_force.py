@@ -1,5 +1,5 @@
 #Algorytm brute-force, czyli szukamy wszystkich możliwych dróg
-#i wybieramy najkrótszą. Złożonośc obliczeniowa (n-1)!/2
+#i wybieramy najkrótszą. Złożonośc obliczeniowa o((n-1)!)
 
 
 def permutacja(lista): #wyznacza permutacje zbioru [1,...,n]
