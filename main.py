@@ -1,16 +1,17 @@
-from better import opt2
+from better import opt2 #importujemy funkcje z innych plików
 from brute_force import brute_force
 from wykresy import wykres
 from zlozonosc import zlozonosc
 from najblizszy_sasiad import wykonanie
-
 import time
 
+#przykładowe punkty
 
 punkty = [(0, 0),(2, 10),(4, 0),(6, 10),(8, 0),(10, 10),(5.6, 5.4)]
 all_way=[]
 all_dist=[]
 
+#sprawdzamy wynik działania algorytmów, czas działania i generujemy wykresy
 
 start_time = time.time()
 bruteforceway, bruteforcedist = brute_force(punkty)
@@ -29,7 +30,6 @@ optway, optdist = opt2(nnway)
 all_way.append(optway)
 all_dist.append(optdist)
 
-
 wykres(all_way, all_dist)
 
-zlozonosc()
+zlozonosc() #wywołujemy też wykres złożoności czasowych
