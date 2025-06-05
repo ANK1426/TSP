@@ -1,3 +1,4 @@
+#to są wykresy samych tras
 import matplotlib.pyplot as plt #pobieramy biblioteki
 import numpy as np
 
