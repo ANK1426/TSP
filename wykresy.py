@@ -12,13 +12,13 @@ def wykres(way, dist):
         trasa = way[i]
         
         
-        x = [point[0] for point in trasa]
+        x = [point[0] for point in trasa] #
         y = [point[1] for point in trasa]
         
         
         axes[i].plot(x, y, marker='o', linestyle='-', color='blue', markersize=8)
         
-        axes[i].set_title(f"{etykiety[i]}\nDistance: {dist[i]:.2f}")
+        axes[i].set_title(f"{etykiety[i]}\nDistance: {dist[i]:.2f}") #tutaj dodajemy ozdobniki wizualne
         axes[i].set_xlabel("x")
         axes[i].set_ylabel("y")
         axes[i].grid(True)
