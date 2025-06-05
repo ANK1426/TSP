@@ -1,4 +1,5 @@
 from wykresy import wykres
+from brute_force import total_dys
 start=[]
 dist=[]
 way=[]
@@ -17,11 +18,11 @@ def wykonanie(punkty):
 
    
     
-    print("Najlepsza trasa od sąsiadów")
-    print(way[best])
-    print(dist[best])
-    print(start[best])
-    return way[best]
+    print("Dla najbliższego sąsiada")
+    print(f"Minimalny dystans to: {total_dys(way[best])}, dla punktów:{way[best]}" )
+    
+    
+    return way[best] ,total_dys(way[best])
 
 
 

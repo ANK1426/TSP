@@ -52,7 +52,7 @@ def brute_force(parametry):
         if total_dys(kolejnosc[i]) < total_dys(min):
             min=kolejnosc[i]
     print(f"Minimalny dystans to: {total_dys(min)}, dla trasy {min}" )
-    return f"Minimalny dystans to: {total_dys(min)}, dla trasy {min}" 
+    return min, total_dys(min) 
 
 
 

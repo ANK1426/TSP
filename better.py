@@ -1,16 +1,10 @@
-def distance(a,b):
-    return ((a[0]-b[0])**2+(a[1]-b[1])**2)**(0.5)
 
-def calydyst(way):
-    total = 0
-    for k in range(len(way) - 1):
-        total += distance(way[k], way[k + 1])
-    # dodajemy odcinek powrotny do punktu startowego
-    total += distance(way[-1], way[0])
-    return total
+from brute_force import total_dys , distance
+
 
 
 def opt2(way):
+    way = way.copy()
     improved = True
     while improved:
         improved = False
@@ -21,7 +15,8 @@ def opt2(way):
                 if old > new:
                     way[i:j + 1] = reversed(way[i:j + 1])
                     improved = True
-    print("dla OPT2")
-    print(way)
-    print(calydyst(way))
-    return way
+    print("Dla OPT2")
+    print(f"Minimalny dystans to: {total_dys(way)} dla punktów {way}" )
+  
+    
+    return way ,total_dys(way)
