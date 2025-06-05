@@ -60,3 +60,8 @@ def brute_force(parametry):
 
 
 
+
+
+
+
+

@@ -3,6 +3,7 @@ from brute_force import total_dys , distance
 
 
 def opt2(way):
+    way=list(way)
     way=way.copy()
     improved = True
     while improved:

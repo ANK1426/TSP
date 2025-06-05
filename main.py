@@ -2,7 +2,6 @@ from better import opt2
 from brute_force import brute_force
 from wykresy import wykres
 from zlozonosc import zlozonosc
-from brute_force import total_dys
 from najblizszy_sasiad import wykonanie
 
 import time
@@ -34,6 +33,3 @@ all_dist.append(optdist)
 wykres(all_way, all_dist)
 
 zlozonosc()
-c=wykonanie(punkty)
-brute_force(punkty)
-opt2(c)

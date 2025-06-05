@@ -6,8 +6,12 @@ way=[]
 
 
 def wykonanie(punkty):
+    if not punkty:
+        print("Błąd: lista punktów jest pusta.")
+        return []
+
     if len(punkty) < 2:
-        print("Podano za mało punktów.")
+        print("Błąd: potrzebne są co najmniej dwa punkty.")
         return []
 
 
