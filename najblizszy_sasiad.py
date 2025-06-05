@@ -6,6 +6,13 @@ way=[]
 
 
 def wykonanie(punkty):
+    if len(punkty) < 2:
+        print("Podano za mało punktów.")
+        return []
+
+
+
+def wykonanie(punkty):
     for i in range(len(punkty)):
         nowe_punkty = punkty[:]  # kopia listy
         nowe_punkty[0], nowe_punkty[i] = nowe_punkty[i], nowe_punkty[0]  # zamień pierwszy z i-tym

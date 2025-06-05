@@ -1,5 +1,5 @@
 #Algorytm brute-force, czyli szukamy wszystkich możliwych dróg
-#i wybieramy najkrótszą. Złożonośc obliczeniowa (n-1)!/2
+#i wybieramy najkrótszą. Złożonośc obliczeniowa o((n-1)!)
 
 
 def permutacja(lista): #wyznacza permutacje zbioru [1,...,n]
@@ -38,6 +38,9 @@ def total_dys(lista): #całkowity dystans, czyli suma po parach
     return d
 
 def brute_force(parametry):
+    if len(parametry) < 2:
+    print("Błąd: podano za mało punktów.")
+
     n=len(parametry)
     slownik={}
     for i in range(n): #to słownik postaci {0:(pierwsza para współrzędnych)...}
